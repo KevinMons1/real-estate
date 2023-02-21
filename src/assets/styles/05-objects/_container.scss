@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+
+  &:not(.fluid) {
+    @include media-queries(xs) {
+      max-width: $size-xs;
+    }
+
+    @include media-queries(sm) {
+      max-width: $size-sm;
+    }
+
+    @include media-queries(md) {
+      max-width: $size-md;
+    }
+
+    @include media-queries(lg) {
+      max-width: $size-lg;
+    }
+
+    @include media-queries(xl) {
+      max-width: $size-xl;
+    }
+  }
+}
