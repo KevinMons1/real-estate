@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "../header/header";
 
 type PropsType = {
     children: JSX.Element
@@ -7,9 +8,10 @@ type PropsType = {
 const Layout = ({ children }: PropsType) => {
     return (
         <>
-            <div className="container">
+            <Header />
+            <main className="container">
                 {children}
-            </div>
+            </main>
         </>
     );
 };

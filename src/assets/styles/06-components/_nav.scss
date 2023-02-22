@@ -1,0 +1,20 @@
+.nav-main {
+  padding: $spacer-md 0;
+  background-color: $color-primary;
+
+  &__content, &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: $spacer-lg;
+    }
+  }
+
+  &__link {
+    color: #fff;
+  }
+}

@@ -1,6 +1,8 @@
 @import "01-settings/colors";
-@import "01-settings/typography";
+@import "01-settings/fonts";
 @import "01-settings/sizes";
+@import "01-settings/spacer";
+@import "01-settings/typography";
 
 @import "02-tools/media-queries";
 @import "02-tools/px-to-rem";
@@ -8,11 +10,13 @@
 @import "03-generics/base";
 
 @import "04-elements/buttons";
+@import "04-elements/link";
 
 @import "05-objects/container";
 
-@import "06-components/header";
 @import "06-components/footer";
+@import "06-components/header";
+@import "06-components/nav";
 
 @import "07-utilities/display.scss";
 @import "07-utilities/text.scss";

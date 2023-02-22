@@ -1,0 +1,27 @@
+.button {
+  &__primary {
+    padding: $spacer-sm $spacer-md;
+    border-top-right-radius: 18px;
+    font-family: $font-primary-bold;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 10px;
+      margin-left: $spacer-sm;
+      background-image: url('../../icons/arrow.svg');
+      @extend .background-image-reset;
+    }
+
+    &--primary {
+      background-color: $color-primary;
+      color: #fff;
+    }
+
+    &--secondary {
+      background-color: $color-secondary;
+      color: #000;
+    }
+  }
+}
