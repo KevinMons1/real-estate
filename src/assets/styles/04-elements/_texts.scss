@@ -1,0 +1,19 @@
+.text {
+  &--sm {
+    font-size: $font-size-sm;
+  }
+
+  &--xl {
+    font-size: rem($font-size-xl);
+    line-height: rem($font-size-xl);
+  }
+
+  &--bold {
+    font-family: $font-primary-bold;
+  }
+
+  &--light {
+    font-family: $font-primary-regular;
+    font-weight: lighter;
+  }
+}

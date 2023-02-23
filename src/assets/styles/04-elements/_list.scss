@@ -1,0 +1,7 @@
+.list {
+  &--reset {
+    li, ol {
+      list-style: none;
+    }
+  }
+}

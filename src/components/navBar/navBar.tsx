@@ -10,7 +10,7 @@ const NavBar = () => {
                         <img src={LogoRealEstate} alt="Logo of company"/>
                     </div>
                     <div className="nav-main__right">
-                        <ul className="nav-main__list">
+                        <ul className="list--reset nav-main__list">
                             <li className="nav-main__item">
                                 <a href="#" className="nav-main__link link--reset">Home</a>
                             </li>

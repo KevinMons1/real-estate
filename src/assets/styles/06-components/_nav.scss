@@ -1,6 +1,9 @@
 .nav-main {
   padding: $spacer-md 0;
-  background-color: $color-primary;
+
+  &--primary {
+    background-color: $color-primary;
+  }
 
   &__content, &__list {
     display: flex;
