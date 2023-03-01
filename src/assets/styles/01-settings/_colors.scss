@@ -1,5 +1,5 @@
 $color-primary: #000000;
 $color-secondary: #FFAC12;
 
-$background-linear-primary-secondary-normal: linear-gradient(#FFAC12, $color-primary);
+$background-linear-primary-secondary-normal: linear-gradient(to right ,#FFAC12, $color-primary);
 $background-linear-primary-secondary-dark: linear-gradient(#271A00, $color-primary);

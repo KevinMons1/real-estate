@@ -3,13 +3,14 @@ const useImage = () => {
         if (!image) return;
         const positions = image.getBoundingClientRect();
         let offsetX = 0;
-        const offsetWidth = offsetX;
 
         if (side === 'left') offsetX = - positions.left;
         else if (side === 'right') offsetX = positions.right;
 
+        if (offsetX === 0) return;
+
         image.style.transform = `translateX(${offsetX}px)`;
-        image.style.width = `${positions.width + offsetWidth}px`;
+        image.style.width = `${positions.width + Math.abs(offsetX)}px`;
     }
 
     return {

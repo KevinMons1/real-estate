@@ -1,7 +1,11 @@
 .header {
+  &--100 {
+    height: 100vh;
+  }
+
   &__main {
     position: relative;
-    height: 100vh;
+    height: 100%;
 
     &::before, &::after {
       @include position-absolute-center;
@@ -30,6 +34,19 @@
 
       &--wrapper {
         @include position-absolute-center;
+      }
+    }
+
+    &__box {
+      position: absolute;
+      left: 50%;
+      bottom: -1px;
+      transform: translateX(-50%);
+
+      &--white {
+        width: 100%;
+        padding: $spacer-sm;
+        background-color: #fff;
       }
     }
   }

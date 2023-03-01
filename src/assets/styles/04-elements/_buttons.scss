@@ -2,7 +2,9 @@
   &__primary {
     padding: $spacer-sm $spacer-md;
     border-top-right-radius: 18px;
+    border-color: transparent;
     font-family: $font-primary-bold;
+    cursor: pointer;
     transition: opacity 0.3s ease-out;
 
     &::after {
@@ -11,22 +13,44 @@
       width: 20px;
       height: 10px;
       margin-left: $spacer-sm;
-      background-image: url('../../icons/arrow.svg');
+      transition: transform 0.3s ease-out;
       @extend .background-image-reset;
     }
 
     &:hover {
-      opacity: 0.5;
+      opacity: 0.75;
+
+      &::after {
+        transform: translateX(5px);
+      }
     }
 
     &--primary {
       background-color: $color-primary;
       color: #fff;
+
+      &::after {
+        background-image: url('../../icons/arrow-yellow.svg');
+      }
     }
 
     &--secondary {
       background-color: $color-secondary;
       color: #000;
+
+      &::after {
+        background-image: url('../../icons/arrow.svg');
+      }
     }
+
+    &--white {
+      background-color: #fff;
+      color: #000;
+
+      &::after {
+        background-image: url('../../icons/arrow-yellow.svg');
+      }
+    }
+
   }
 }

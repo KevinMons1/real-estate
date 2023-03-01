@@ -8,6 +8,11 @@
     line-height: rem($font-size-xl);
   }
 
+  &--lg {
+    font-size: rem($font-size-lg);
+    line-height: rem($font-size-lg);
+  }
+
   &--bold {
     font-family: $font-primary-bold;
   }

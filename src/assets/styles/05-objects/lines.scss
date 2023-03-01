@@ -1,0 +1,12 @@
+.line {
+  &__separator {
+    height: 4px;
+    width: 150px;
+
+    &--gradient {
+      &--normal {
+        background: $background-linear-primary-secondary-normal;
+      }
+    }
+  }
+}
