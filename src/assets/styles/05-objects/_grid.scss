@@ -1,11 +1,11 @@
 .grid {
   display: grid;
 
-  &--half {
+  &__half {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  &--gap {
+  &__gap {
     &--lg {
       gap: $spacer-lg;
     }

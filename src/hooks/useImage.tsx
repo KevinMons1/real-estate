@@ -1,21 +1,19 @@
 const useImage = () => {
-    const imageToSideScreen = (image: HTMLElement, side: string): void => {
-        if (!image) return;
-        const positions = image.getBoundingClientRect();
-        let offsetX = 0;
+    const imageToSideScreen = (image: HTMLElement, parent: HTMLElement, container: HTMLElement, position: string): void => {
+        if (!image || !container || !parent || !position) return;
 
-        if (side === 'left') offsetX = - positions.left;
-        else if (side === 'right') offsetX = positions.right;
+        const height = container.clientHeight;
+        const parentPosition = parent.getBoundingClientRect();
+        const parentOffset = position === 'left' ? parentPosition.left : parentPosition.right;
+        const width = parentPosition.width + parentOffset;
 
-        if (offsetX === 0) return;
-
-        image.style.transform = `translateX(${offsetX}px)`;
-        image.style.width = `${positions.width + Math.abs(offsetX)}px`;
-    }
+        image.style.height = `${height}px`;
+        image.style.width = `${width}px`;
+    };
 
     return {
         imageToSideScreen,
-    }
+    };
 }
 
 export default useImage;

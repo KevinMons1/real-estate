@@ -12,13 +12,14 @@
 @import "03-generics/spacer";
 
 @import "04-elements/buttons";
+@import "04-elements/filters";
 @import "04-elements/images";
 @import "04-elements/links";
 @import "04-elements/lists";
 @import "04-elements/titles";
 @import "04-elements/texts";
-@import "04-elements/sections";
 
+@import "05-objects/background";
 @import "05-objects/container";
 @import "05-objects/flex";
 @import "05-objects/grid";
@@ -27,6 +28,7 @@
 @import "06-components/footer";
 @import "06-components/header";
 @import "06-components/nav";
+@import "06-components/sections";
 
 @import "07-utilities/display.scss";
 @import "07-utilities/text.scss";

@@ -1,0 +1,15 @@
+.section {
+  &__home {
+    &__articles {
+      &--offset {
+        transform: translateY(-60px);
+      }
+    }
+  }
+
+  &__attraction-to-content {
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
