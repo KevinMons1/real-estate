@@ -1,13 +1,10 @@
-$size-xs: 320px;
-$size-sm: 600px;
-$size-md: 900px;
-$size-lg: 1200px;
-$size-xl: 1800px;
-
-$breakpoints: (
-    xs: $size-xs,
-    sm: $size-sm,
-    md: $size-md,
-    lg: $size-lg,
-    xl: $size-xl
+$breakpoints-width: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
 );

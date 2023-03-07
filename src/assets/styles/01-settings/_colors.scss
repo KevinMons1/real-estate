@@ -1,6 +1,10 @@
+// Main colors
 $color-primary: #000000;
 $color-secondary: #FFAC12;
+
+// Grey colors
 $color-grey-0: #F5F5F5;
 
+// Linear-gradient colors
 $background-linear-primary-secondary-normal: linear-gradient(to right ,#FFAC12, $color-primary);
 $background-linear-primary-secondary-dark: linear-gradient(#271A00, $color-primary);

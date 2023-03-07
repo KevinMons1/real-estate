@@ -1,0 +1,19 @@
+@mixin spacer-constructor {
+  @each $spacer-name, $spacer-value in $spacers {
+    @each $padding-name, $padding-value in $padding-directions {
+      &__#{$padding-value} {
+        &--#{$spacer-name} {
+          #{$padding-name}: $spacer-value;
+        }
+      }
+    }
+
+    @each $margin-name, $margin-value in $margin-directions {
+      &__#{$margin-value} {
+        &--#{$spacer-name} {
+          #{$margin-name}: $spacer-value;
+        }
+      }
+    }
+  }
+}

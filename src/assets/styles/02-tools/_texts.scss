@@ -1,0 +1,12 @@
+@use "sass:math";
+
+@function stripUnit($value) {
+  @return math.div($value, ($value * 0 + 1));
+}
+@function rem($pxValue) {
+  @return #{math.div(stripUnit($pxValue), stripUnit(map-get($font-size, html-default)))}rem;
+}
+
+@mixin font-size($size) {
+  font-size: rem(map-get($font-size, $size));
+}

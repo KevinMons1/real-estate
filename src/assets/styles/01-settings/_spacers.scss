@@ -4,3 +4,28 @@ $spacer-md: 30px;
 $spacer-lg: 60px;
 $spacer-xl: 120px;
 $spacer-xxl: 160px;
+
+$spacers: (
+  xs: $spacer-xl,
+  sm: $spacer-sm,
+  md: $spacer-md,
+  lg: $spacer-lg,
+  xl: $spacer-xl,
+  xxl: $spacer-xxl
+);
+
+$padding-directions: (
+  padding: "p",
+  padding-top: "pt",
+  padding-bottom: "pb",
+  padding-left: "pl",
+  padding-right: "pr",
+);
+
+$margin-directions: (
+  margin: "m",
+  margin-top: "mb",
+  margin-bottom: "mb",
+  margin-left: "ml",
+  margin-right: "mr",
+);

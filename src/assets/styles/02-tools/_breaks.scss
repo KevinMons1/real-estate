@@ -1,0 +1,19 @@
+@mixin media-queries($breakpoint) {
+  @if map-has-key($breakpoints-width, $breakpoint) {
+    @media (min-width: #{map-get($breakpoints-width, $breakpoint)}) {
+      @content;
+    }
+  }
+}
+
+@mixin container-responsive {
+  @each $name, $value in $breakpoints-width {
+    @include media-queries($name) {
+      @if $name == 'tablet' {
+        max-width: 100%;
+      } @else {
+        max-width: $value;
+      }
+    }
+  }
+}

@@ -1,9 +1,12 @@
-$html-font-size: 16px;
-$font-size-base: 14px;
-$font-size-sm: 20px;
-$font-size-md: 24px;
-$font-size-lg: 50px;
-$font-size-xl: 80px;
+$font-size: (
+  html-default: 16px,
+  xxs: 11px,
+  xs: 14px,
+  sm: 20px,
+  md: 24px,
+  lg: 50px,
+  xl: 80px,
+);
 
 $font-primary-bold: 'DMSans Bold';
 $font-primary-medium: 'DMSans Medium';

@@ -1,16 +1,15 @@
 .text {
-  &--sm {
-    font-size: $font-size-sm;
-  }
-
   &--xl {
-    font-size: rem($font-size-xl);
-    line-height: rem($font-size-xl);
+    @include font-size("xl");
+    line-height: rem(map-get($font-size, "xl"));
   }
 
   &--lg {
-    font-size: rem($font-size-lg);
-    line-height: rem($font-size-lg);
+    @include font-size("lg");
+  }
+
+  &--sm {
+    @include font-size("sm");
   }
 
   &--bold {

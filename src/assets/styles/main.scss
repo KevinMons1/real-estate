@@ -1,12 +1,16 @@
 @import "01-settings/colors";
 @import "01-settings/fonts";
+@import "01-settings/positions";
 @import "01-settings/sizes";
 @import "01-settings/spacers";
 @import "01-settings/typography";
 
-@import "02-tools/media-queries";
+@import "02-tools/breaks";
 @import "02-tools/positions";
-@import "02-tools/px-to-rem";
+@import "02-tools/texts";
+@import "02-tools/pseudo";
+@import "02-tools/spacers";
+@import "02-tools/z-index";
 
 @import "03-generics/base";
 @import "03-generics/spacer";
