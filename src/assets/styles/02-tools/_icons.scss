@@ -1,0 +1,41 @@
+.arrow-style {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid $color-primary;
+  border-bottom: 2px solid $color-primary;
+  transform: rotate(45deg);
+}
+
+@mixin arrow($position: right) {
+  @if $position == right {
+    &::after {
+      @include pseudo(block, static);
+      @extend .arrow-style;
+    }
+  } @else {
+    &::before {
+      @include pseudo(block, static);
+      @extend .arrow-style;
+    }
+  }
+}
+
+@mixin arrow-absolute($position: right) {
+  @if $position == right {
+    &::after {
+      @include pseudo(block, absolute);
+      @extend .arrow-style;
+      top: 50%;
+      right: 0;
+      transform: translateY(-75%) rotate(45deg);
+    }
+  } @else {
+    &::before {
+      @include pseudo(block, absolute);
+      @extend .arrow-style;
+      top: 50%;
+      left: 0;
+      transform: translateY(-75%) rotate(45deg);
+    }
+  }
+}

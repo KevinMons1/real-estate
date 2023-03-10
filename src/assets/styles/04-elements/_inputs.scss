@@ -1,29 +1,45 @@
 .select {
-  &--reset {
-    select {
-      width: 100%;
-      margin: 0;
-      padding: 0 1em 0 0;
-      // A reset of styles, including removing the default dropdown arrow
-      appearance: none;
-      // Additional resets for further consistency
-      background-color: transparent;
-      border: none;
-      font-family: inherit;
-      font-size: inherit;
-      cursor: inherit;
-      line-height: inherit;
-      outline: none;
-
-      &::-ms-expand {
-        display: none;
-      }
-    }
+  &--hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
 
   &__default {
     display: flex;
     align-items: center;
     height: 100%;
+    width: 100%;
+    cursor: pointer;
+
+    .select {
+      &__wrapper {
+        width: 100%;
+      }
+
+      &__header {
+        display: flex;
+        align-items: center;
+
+        span {
+          @include arrow-absolute(right);
+          padding-right: rem(25px);
+          position: relative;
+        }
+      }
+
+      &__content {
+        max-height: 0;
+        overflow: hidden;
+      }
+    }
+
+
+    select {
+      height: 100%;
+      width: 100%;
+      padding-right: rem($spacer-xs);
+      cursor: pointer;
+    }
   }
 }
