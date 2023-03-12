@@ -5,7 +5,15 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  &__three {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   &__gap {
+    &--md {
+      gap: $spacer-md;
+    }
+
     &--lg {
       gap: $spacer-lg;
     }

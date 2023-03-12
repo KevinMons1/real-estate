@@ -1,0 +1,5 @@
+@mixin transition-basic($property...) {
+  transition-property: $property;
+  transition-duration: $transition-duration-basic;
+  transition-timing-function: $transition-ease-basic;
+}

@@ -1,0 +1,44 @@
+.card {
+  &__default {
+    @include transition-basic(box-shadow);
+    background-color: #fff;
+    border-radius: rem($radius-md);
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover {
+      box-shadow: $shadow-basic;
+    }
+
+    .card {
+      &__header {
+        height: rem(250px);
+      }
+
+      &__content {
+        padding: $spacer-md $spacer-sm;
+
+        &__title {
+          @extend .text--bold, .text--md
+        }
+      }
+
+      &__footer {
+        border-top: 1px solid $color-grey-1;
+
+        &__content {
+          padding: rem(20px) $spacer-md;
+
+          &:not(:last-child) {
+            border-right: 1px solid $color-grey-1;
+          }
+
+          &__number {
+            @extend .text--bold;
+            padding-left: rem(10px);
+          }
+        }
+      }
+    }
+  }
+}

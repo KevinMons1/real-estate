@@ -21,21 +21,23 @@
 }
 
 @mixin arrow-absolute($position: right) {
-  @if $position == right {
-    &::after {
-      @include pseudo(block, absolute);
-      @extend .arrow-style;
-      top: 50%;
-      right: 0;
-      transform: translateY(-75%) rotate(45deg);
+  &::after {
+    @include pseudo(block, absolute);
+    @include transition-basic(transform);
+    @extend .arrow-style;
+    top: 50%;
+    transform: translateY(-75%) rotate(45deg);
+
+    @if $position == right {
+        right: 0;
+    } @else {
+        left: 0;
     }
-  } @else {
-    &::before {
-      @include pseudo(block, absolute);
-      @extend .arrow-style;
-      top: 50%;
-      left: 0;
-      transform: translateY(-75%) rotate(45deg);
+  }
+
+  &.active {
+    &::after {
+      transform: translateY(-25%) rotate(225deg);
     }
   }
 }
