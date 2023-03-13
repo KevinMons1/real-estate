@@ -4,8 +4,8 @@ interface IimageToSideScreen {
     container: HTMLElement,
     position: string,
     offsetHeight?: number,
-    offsetWidth?: number
-}
+    offsetWidth?: number,
+};
 
 const useImage = () => {
     const imageToSideScreen = ({

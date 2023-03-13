@@ -11,7 +11,7 @@ const AttractionToContent = () => {
     useEffect(() => {
         window.addEventListener('resize', handleImageToSideScreen);
         handleImageToSideScreen();
-    }, []);
+    }, []); // eslint-disable-line
 
     const handleImageToSideScreen = () => {
         if (!imageBlockRef.current || !containerRef.current || !imageParentRef.current) return;
@@ -20,6 +20,7 @@ const AttractionToContent = () => {
             parent: imageParentRef.current,
             container: containerRef.current,
             position: 'left',
+            offsetHeight: 70
         });
     };
 
